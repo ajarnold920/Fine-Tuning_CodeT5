@@ -22,9 +22,7 @@ labeled "#2. Load Dataset".
 #test = test[:100]
 ```
 
-If you would like to use our trained model for your own purposes, it is
-saved at this line:
+If you would like to use our trained model for your own purposes, upload it to your Google Colab runtime, then run the code on this line and below:
 ```
-trainer.save_model("t5_Model")
+trainer = AutoModelForSeq2SeqLM.from_pretrained("t5_Model")
 ```
-Stop execution at this point in the file.
